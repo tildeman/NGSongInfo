@@ -19,7 +19,7 @@
 			$uniformdata=explode('~|~',$returnres);
 			echo 'Song ID: '.$uniformdata[1].'<br>Song Name: '.$uniformdata[3].'<br>Artist ID: '.$uniformdata[5].'<br>';
 			echo 'Song artist (upon publishment, may be incorrect): '.$uniformdata[7].'<br>Size: '.$uniformdata[9].'MB<br>';
-			echo 'Download link: <a href="'.urldecode($uniformdata[13]).'">'.urldecode($uniformdata[13]).'</a>';
+			echo 'Download link: '.urldecode($uniformdata[13]);
 		}
 	?>
 </body>
